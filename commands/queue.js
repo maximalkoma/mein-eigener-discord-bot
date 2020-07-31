@@ -37,7 +37,7 @@ exports.run = async (bot, message, args, active) => {
       .setThumbnail(queue[0].thumbnail)
       .addField("Spielt gerade:", queue[0].songTitle, true)
       .addField("Dauer:", queue[0].duration, true)
-      .addField("Wurde sich gewünscht von:", queue[0].requestor, true)
+      .addField("Eingereicht von:", queue[0].requestor, true)
       .addField("Warteliste:", data)
       .setColor("#2ECC71")
     );

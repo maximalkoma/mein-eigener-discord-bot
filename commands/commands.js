@@ -7,14 +7,15 @@ exports.run = async (bot, message, args) => {
   // Send the commands list
   message.channel.send(
     new MessageEmbed()
-      .setTitle("𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜 𝙻𝚒𝚜𝚝")
-      .setDescription(`𝙰 𝚜𝚒𝚖𝚙𝚕𝚎 𝚖𝚞𝚜𝚒𝚌 𝚋𝚘𝚝.\n[𝙸𝚗𝚟𝚒𝚝𝚎 𝚄𝚁𝙻](${await bot.generateInvite(8)})`)
-      .addField("𝚙𝚕𝚊𝚢", "Spielt einen Song ab oder Gliedert ihn gegebenenfalls in die Warteliste ein.\n*Befehl:  \`𝚙𝚕𝚊𝚢 (𝚈𝚘𝚞𝚝𝚞𝚋𝚎 𝚄𝚁𝙻/𝚅𝚒𝚍𝚎𝚘 𝚃𝚒𝚝𝚕𝚎)\`*")
-      .addField("𝚜𝚔𝚒𝚙", "𝚂𝚔𝚒𝚙t den gerade spielenden Song. Ist ebenso dazu da, den nächsten Song abspielen zu lassen.\n*Befehl:  \`𝚜𝚔𝚒𝚙\`*")
-      .addField("𝚚𝚞𝚎𝚞𝚎", "Zeigt alle Lieder an, die sich in der Warteliste befinden.\n*Befehl:  \`𝚚𝚞𝚎𝚞𝚎\`*")
-      .addField("𝚕𝚎𝚊𝚟𝚎", "Löscht die Warteliste und Verlässt den Sprachkanal.\n*Befehl:  \`𝚕𝚎𝚊𝚟𝚎\`*")
+      .setTitle("𝐁𝐞𝐟𝐞𝐡𝐥𝐬 𝐋𝐢𝐬𝐭𝐞")
+      .setDescription(`𝐃𝐞𝐫 𝐌𝐮𝐬𝐢𝐤𝐛𝐨𝐭 𝐯𝐨𝐧 𝐃𝐉 𝐊𝐨𝐦𝐚𝐤𝐚𝐬𝐩𝐞𝐫!\n[Lade ihn jetzt mit diesem Link auch auf deinen Server ein!](${await bot.generateInvite(8)})`)
+      .addField("𝐩𝐥𝐚𝐲", "Spielt einen Song ab oder Gliedert ihn gegebenenfalls in die Warteliste ein.\n*Befehl:  \`𝚙𝚕𝚊𝚢 (𝚈𝚘𝚞𝚝𝚞𝚋𝚎 𝚄𝚁𝙻/𝚅𝚒𝚍𝚎𝚘 𝚃𝚒𝚝el)\`*")
+      .addField("𝐬𝐤𝐢𝐩", "𝚂𝚔𝚒𝚙t den gerade spielenden Song.\n*Befehl:  \`𝚜𝚔𝚒𝚙\`*")
+      .addField("𝐧𝐞𝐱𝐭", "Ist dazu da, den nächsten Song abspielen zu lassen.\n*Befehl:  \`next\`*")
+      .addField("𝐪𝐮𝐞𝐮𝐞", "Zeigt alle Lieder an, die sich in der Warteliste befinden.\n*Befehl:  \`𝚚𝚞𝚎𝚞𝚎\`*")
+      .addField("𝐥𝐞𝐚𝐯𝐞", "Löscht die Warteliste und Verlässt den Sprachkanal.\n*Befehl:  \`𝚕𝚎𝚊𝚟𝚎\`*")
       .setColor(0x2ECC71)
       .setTimestamp()
-      
+
   )  
 }

@@ -89,7 +89,7 @@ async function play(bot, active, data) {
   // Tell the user the bot is starting to play the song
   bot.channels.cache.get(data.queue[0].ch).send(
     new MessageEmbed()
-      .setTitle("Fängt jetzt an zu Spielen:")
+      .setTitle("Spielt jetzt:")
       .addField('Titel:', data.queue[0].songTitle)
       .addField("𝙳auer:", data.queue[0].duration)
       .addField('𝚄𝚁𝙻:', data.queue[0].url)
@@ -103,7 +103,7 @@ async function play(bot, active, data) {
   data.dispatcher = await data.connection.play(ytdl(data.queue[0].url, {filter: 'audioonly'}))
   
   // Once the song is finished play the next on in queue or leave the voice channel
-  data.dispatcher.once('Fertig', async () => {
+  data.dispatcher.once('skipped', async () => {
     
     // Retrieves the server's music information
     let fetched = active.get(data.guildId)

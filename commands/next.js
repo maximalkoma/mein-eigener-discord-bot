@@ -17,6 +17,6 @@ exports.run = async (bot, m, args, active) => {
   fetched.dispatcher.emit("skipped");
   
   // Tells the member the bot skipped the current song
-  m.channel.send("Der laufende Song wurde geskippt.");
+  m.channel.send("Tippe %next ein, um das nächste Lied aus der Warteschlange abzuspielen.");
   
 }

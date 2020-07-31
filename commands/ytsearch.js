@@ -27,9 +27,9 @@ exports.run = async (bot, message, args, active) => {
       // Sends the song picker and defines it to a variable for later use
       let picker = await message.channel.send(
         new MessageEmbed()
-          .setTitle("𝚂𝚘𝚗𝚐 𝙿𝚒𝚌𝚔𝚎𝚛")
+          .setTitle("𝚂uche")
           .setDescription(songs)
-          .addField("**𝙿𝚒𝚌𝚔 𝚊𝚗𝚢 𝚗𝚞𝚖𝚋𝚎𝚛 𝚏𝚛𝚘𝚖**", "𝟷-𝟷𝟶\n𝙾𝚛 𝚝𝚢𝚙𝚎 \`𝚌𝚊𝚗𝚌𝚎𝚕\` 𝚝𝚘 𝚌𝚊𝚗𝚌𝚎l")
+          .addField("**Wähle eine Zahl von**", "𝟷-𝟷𝟶\nOder tippe 𝚝𝚢𝚙𝚎 \`𝚌𝚊𝚗𝚌𝚎𝚕\` ein um die suche abzubrechen")
           .setFooter(message.author.tag, message.author.displayAvatarURL)
           .setTimestamp()
           .setColor("#2ECC71")
@@ -62,7 +62,7 @@ exports.run = async (bot, message, args, active) => {
           collector.stop();
           
           // Tells the user the collector has canceled
-          message.channel.send("𝙲𝚊𝚗𝚌𝚎𝚕𝚎𝚍.");
+          message.channel.send("Suche wurde abgebrochen");
         
         }
         
@@ -73,7 +73,7 @@ exports.run = async (bot, message, args, active) => {
           collector.stop();
           
           // Tells the user their input is invalid
-          message.channel.send(`\`${msg.content}\` 𝚒𝚜 𝚗𝚘𝚝 𝚊 𝚟𝚊𝚕𝚒𝚍 𝚘𝚙𝚝𝚒𝚘𝚗`)
+          message.channel.send(`\`${msg.content}\` ist kein gültiger command`)
           
         }
       
